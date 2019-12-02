@@ -1,4 +1,4 @@
-"use strick"
+"use stric"
 
 $(document).ready(function(){
     $(".basket").click (function(){
@@ -12,6 +12,9 @@ $(document).ready(function(){
         $(this).next().slideToggle();
     })
     $(".side-icon").click(function(){
-        $(".side-icon").addClass("come")
+        $(".side-menu").addClass("active-side-menu")
+    })
+    $(".back-li").click(function(){
+        $(".side-menu").removeClass("active-side-menu")
     })
 })

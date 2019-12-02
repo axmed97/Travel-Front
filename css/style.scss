@@ -118,7 +118,6 @@ li{
     .bottom-menu{
         padding: 0 50px;
         display: flex;
-        height: 100%;
         justify-content: space-between;
         .side-menu{
             background-color: #fff;
@@ -126,9 +125,13 @@ li{
             height: 100%;
             position: fixed;
             top: 0;
-            left: 0;
+            left: -1000px;
             width: 50%;
             overflow-y: scroll;
+            transition: .5s;
+            &.active-side-menu{
+                left: 0;
+            }
             .back-li{
                 background-color: #f5f5f5;
                 .back-icon{
@@ -169,7 +172,6 @@ li{
         }
         
         .bottom-menu-left{
-            height: 100%;
             display: flex;
             .side-icon{
                 cursor: pointer;
@@ -210,6 +212,7 @@ li{
                         }
                     }
                     .bottom-drop-menu{
+                        z-index: 10;
                         position: absolute;
                         top: 200px;
                         left: 227px;
@@ -241,6 +244,7 @@ li{
                         }
                     }
                     .bottom-drop-menu-little{
+                        z-index: 10;
                         position: absolute;
                         top: 200px;
                         left: 584px;
@@ -302,7 +306,7 @@ li{
                     background-color: #fff;
                     position: absolute;
                     top: 65px;
-                    left: 1037px;
+                    left: 75%;
                     padding: 5px;
                     border: 1px solid #dfdfdf;
                     border-radius: 5px;
@@ -345,7 +349,29 @@ li{
 }
 
 /* Bottom Header End */
+
+/* Center Header Start */ 
+.center-head{
+    .center-head-text{
+        h1{
+            font-size: 54px;
+            color: white;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+        }
+        p{
+            font-size: 18px;
+            color: white;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+}
+/* Center Header End */ 
+
 /* Header End */
+
+
 
 /* Media Queries Start */
 @media (max-width: 1200px){
@@ -384,6 +410,9 @@ li{
     /* Bottom Header Media Start */
     .bottom-menu{
         padding: 30px 35px !important;
+    }
+    .inbasket{
+        left: 50%;
     }
     .side-icon{
         display: block !important;
@@ -426,6 +455,9 @@ li{
     .bottom-menu{
         padding: 20px !important;
     }
+    .inbasket{
+        left: 50%;
+    }
     .side-icon{
         display: block !important;
     }
@@ -433,6 +465,18 @@ li{
         display: none !important;
     }
     /* Bottom Header Media End */
+    /* Center Header Media Start */
+    .center-head{
+        .center-head-text{
+            h1{
+                font-size: 48px !important;
+            }
+            p{
+                display: none !important;
+            }
+        }
+    }
+    /* Center Header Media End */
 }
 @media (max-width: 540px){
     /* Top Header Media Start */
@@ -467,6 +511,7 @@ li{
     .bottom-menu{
         padding: 20px !important;
     }
+    
     .side-icon{
         display: block !important;
     }
@@ -474,6 +519,18 @@ li{
         display: none !important;
     }
     /* Bottom Header Media End */
+    /* Center Header Media Start */
+    .center-head{
+        .center-head-text{
+            h1{
+                font-size: 32px !important;
+            }
+            p{
+                display: none !important;
+            }
+        }
+    }
+    /* Center Header Media End */
 }
 /* Media Queries End */
 
