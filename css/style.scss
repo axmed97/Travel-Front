@@ -372,6 +372,11 @@ li{
             margin: 0;
         }
     }
+    .acc-slider{
+        .acc-slider-title{
+            background-color: #fff;
+        }
+    }
 }
 /* Center Header End */ 
 
@@ -1363,7 +1368,9 @@ li{
     .bottom-menu{
         padding: 20px !important;
     }
-    
+    .side-menu{
+        width: 70% !important;
+    }
     .side-icon{
         display: block !important;
     }

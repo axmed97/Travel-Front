@@ -1039,6 +1039,9 @@ li {
   .bottom-menu {
     padding: 20px !important;
   }
+  .side-menu {
+    width: 70% !important;
+  }
   .side-icon {
     display: block !important;
   }

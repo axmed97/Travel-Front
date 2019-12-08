@@ -470,6 +470,10 @@ li {
   margin: 0;
 }
 
+.center-head .acc-slider .acc-slider-title {
+  background-color: #fff;
+}
+
 /* Center Header End */
 /* Header End */
 /* Hover Section Start */
@@ -1522,6 +1526,9 @@ li {
   /* Bottom Header Media Start */
   .bottom-menu {
     padding: 20px !important;
+  }
+  .side-menu {
+    width: 70% !important;
   }
   .side-icon {
     display: block !important;

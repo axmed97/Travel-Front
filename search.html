@@ -306,20 +306,33 @@
                                     <div class="col-12 col-sm-12 col-md-12 close-search d-none">
                                         <div class="search-input d-flex justify-content-center align-items-center mb-5">
                                             <ul class="search-ul">
-                                                <li class="search-li"><a href="#"><i class="fas fa-map-marker-alt"></i> Where are you going?</a></li>
+                                                <li class="search-li"><a href="#"><i class="fas fa-map-marker-alt"></i>
+                                                        Where are you going?</a></li>
                                                 <div class="drop-search d-none">
                                                     <ul class="drop-search-ul">
                                                         <li class="drop-hd-li">United States</li>
-                                                        <li class="drop-bd-li"><a href="#"><i class="fas fa-map-marker-alt"></i> California</a></li>
-                                                        <li class="drop-bd-li"><a href="#"><i class="fas fa-map-marker-alt"></i> Los Angeles</a></li>
-                                                        <li class="drop-bd-li"><a href="#"><i class="fas fa-map-marker-alt"></i> Nevada</a></li>
-                                                        <li class="drop-bd-li"><a href="#"><i class="fas fa-map-marker-alt"></i> New Jersey</a></li>
+                                                        <li class="drop-bd-li"><a href="#"><i
+                                                                    class="fas fa-map-marker-alt"></i> California</a>
+                                                        </li>
+                                                        <li class="drop-bd-li"><a href="#"><i
+                                                                    class="fas fa-map-marker-alt"></i> Los Angeles</a>
+                                                        </li>
+                                                        <li class="drop-bd-li"><a href="#"><i
+                                                                    class="fas fa-map-marker-alt"></i> Nevada</a></li>
+                                                        <li class="drop-bd-li"><a href="#"><i
+                                                                    class="fas fa-map-marker-alt"></i> New Jersey</a>
+                                                        </li>
                                                         <li class="small-li"><a href="#">Delaware</a></li>
                                                         <li class="small-li"><a href="#">Philadelphia</a></li>
-                                                        <li class="drop-bd-li"><a href="#"><i class="fas fa-map-marker-alt"></i> New York City</a></li>
-                                                        <li class="drop-bd-li"><a href="#"><i class="fas fa-map-marker-alt"></i> San Francisco</a></li>
+                                                        <li class="drop-bd-li"><a href="#"><i
+                                                                    class="fas fa-map-marker-alt"></i> New York City</a>
+                                                        </li>
+                                                        <li class="drop-bd-li"><a href="#"><i
+                                                                    class="fas fa-map-marker-alt"></i> San Francisco</a>
+                                                        </li>
                                                         <li class="small-li"><a href="#">Wilmington</a></li>
-                                                        <li class="drop-bd-li"><a href="#"><i class="fas fa-map-marker-alt"></i> Virginia</a></li>
+                                                        <li class="drop-bd-li"><a href="#"><i
+                                                                    class="fas fa-map-marker-alt"></i> Virginia</a></li>
                                                         <li class="small-li"><a href="#">Virginia Beach</a></li>
                                                     </ul>
                                                 </div>
@@ -405,25 +418,652 @@
         <div class="product">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="product-list d-none">
-                            <ul class="d-flex justify-content-center">
-                                <li><a class="active-a" href="#">Date</a></li>
-                                <li><a class="active-a" href="#">Guest</a></li>
-                                <li><a class="active-a" href="#">Map</a></li>
-                                <li><a class="active-a" href="#">Sort</a></li>
-                                <li><a class="active-a" href="#">Filter</a></li>
-                            </ul>
+                    <div class="col-lg-3 col-xl-3">
+                        <div class="filter">
+                            <div class="filter-h3">
+                                <h3>FILTER BY</h3>
+                            </div>
+                            <div class="filter-inside">
+                                <div class="filter-head d-flex align-items-center justify-content-between">
+                                    <h4>Filter Price</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="filter-input">
+                                    <div class="input-p d-flex justify-content-between">
+                                        <p>€39</p>
+                                        <p>€<span id="value"></span></p>
+                                    </div>
+                                    <input type="range" value="315" min="39" max="315" id="myRange" class="sliderRange">
+                                    <br>
+                                    <a href="#">APPLY</a>
+                                </div>
+                            </div>
+                            <div class="filter-inside">
+                                <div class="filter-head d-flex align-items-center justify-content-between">
+                                    <h4>Review Score</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="filter-input">
+                                    <label><input type="checkbox">Excellent</label><br>
+                                    <label><input type="checkbox">Very Good</label><br>
+                                    <label><input type="checkbox">Average</label><br>
+                                    <label><input type="checkbox">Poor</label><br>
+                                    <label><input type="checkbox">Terrible</label><br>
+                                </div>
+                            </div>
+                            <div class="filter-inside">
+                                <div class="filter-head d-flex align-items-center justify-content-between">
+                                    <h4>Hotel Start</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="filter-input">
+                                    <label for="input-star1"><input type="checkbox" name="" id="input-star1">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </label><br>
+                                    <label for="input-star2"><input type="checkbox" name="" id="input-star2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </label><br>
+                                    <label for="input-star3"><input type="checkbox" name="" id="input-star3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </label><br>
+                                    <label for="input-star4"><input type="checkbox" name="" id="input-star4">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </label><br>
+                                    <label for="input-star5"><input type="checkbox" name="" id="input-star5">
+                                        <i class="fas fa-star"></i>
+                                    </label><br>
+                                </div>
+                            </div>
+                            <div class="filter-inside">
+                                <div class="filter-head d-flex align-items-center justify-content-between">
+                                    <h4>Facilities</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="filter-input">
+                                    <label><input type="checkbox">Air Conditioning</label><br>
+                                    <label><input type="checkbox">Air Transport</label><br>
+                                    <label><input type="checkbox">Fitness Center</label><br>
+                                    <label><input type="checkbox">Heater</label><br>
+                                    <label><input type="checkbox">Internet - Wifi</label><br>
+                                    <label><input type="checkbox">Parking</label><br>
+                                    <label><input type="checkbox">Pool</label><br>
+                                    <label><input type="checkbox">Restaurant</label><br>
+                                    <label><input type="checkbox">Smoking Room</label><br>
+                                    <label><input type="checkbox">Spa & Sauna</label><br>
+                                    <label><input type="checkbox">Washer & Dryer</label><br>
+                                </div>
+                            </div>
+                            <div class="filter-inside">
+                                <div class="filter-head d-flex align-items-center justify-content-between">
+                                    <h4>Hotel Theme</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="filter-input">
+                                    <label><input type="checkbox">Best Value</label><br>
+                                    <label><input type="checkbox">Boutique</label><br>
+                                    <label><input type="checkbox">Budget</label><br>
+                                    <label><input type="checkbox">Business</label><br>
+                                    <label><input type="checkbox">Classic</label><br>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-xl-3">
-                        <div class="filter-h3">FILTER BY</div>
-                        <div class="filter d-flex justify-content-between align-items-center">
-                            <h4>Filter Price</h4>
-                            <i class="fas fa-chevron-down"></i>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                        <div class="product-list d-none">
+                            <ul>
+                                <li><a href="#">Date</a></li>
+                                <li><a href="#">Guest</a></li>
+                                <li><a href="#">Map</a></li>
+                                <li><a href="#">Sort</a></li>
+                                <li><a href="#">Filter</a></li>
+                            </ul>
                         </div>
-                        <div class="filter-input">
-                            
+                        <div class="product-detail">
+                            <div class="product-detail-head d-flex justify-content-between align-items-center">
+                                <div class="detail-head-left">
+                                    <h3>San Francisco: 20 hotels found</h3>
+                                </div>
+                                <div class="detail-head-right d-flex align-items-center justify-content-between">
+                                    <div class="detail-button">
+                                        <button>Sort <i class="fas fa-angle-down"></i></button>
+                                        <div class="detail-button-drop d-none">
+                                            <div class="button-drop-head">
+                                                <h3>SORT BY</h3>
+                                            </div>
+                                            <div class="button-drop-input">
+                                                <label class="d-flex align-items-center"><input type="checkbox">New
+                                                    Hotel</label>
+                                            </div>
+                                            <div class="button-drop-head-small">
+                                                <h3>Price</h3>
+                                            </div>
+                                            <div class="button-drop-input">
+                                                <label class="d-flex align-items-center"><input type="checkbox">Low to
+                                                    High</label>
+                                                <label class="d-flex align-items-center"><input type="checkbox">High to
+                                                    Low</label>
+                                            </div>
+                                            <div class="button-drop-head-small">
+                                                <h3>Name</h3>
+                                            </div>
+                                            <div class="button-drop-input">
+                                                <label class="d-flex align-items-center"><input type="checkbox">a -
+                                                    z</label>
+                                                <label class="d-flex align-items-center"><input type="checkbox">z -
+                                                    a</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail-svg d-flex justify-content-between">
+                                        <svg class="mr-2" height="24px" width="24px" viewBox="0 0 20 20" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+
+                                            <desc>Created with Sketch.</desc>
+                                            <defs></defs>
+                                            <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                <g id="Search_Result_1_Grid"
+                                                    transform="translate(-1255.000000, -920.000000)" stroke="#A0A9B2">
+                                                    <g id="list-hotel" transform="translate(435.000000, 910.000000)">
+                                                        <g id="ico_list" transform="translate(820.000000, 10.000000)">
+                                                            <g id="layout-bullets">
+                                                                <rect id="Rectangle-path" x="6.875" y="0.6225"
+                                                                    width="12.5" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="6.875" y="8.1225"
+                                                                    width="12.5" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="6.875" y="15.6225"
+                                                                    width="12.5" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="0.625" y="0.6225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="0.625" y="8.1225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="0.625" y="15.6225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <svg width="24px" height="24px" viewBox="0 0 20 20" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+
+                                            <desc>Created with Sketch.</desc>
+                                            <defs></defs>
+                                            <g id="Hotel-layout" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                <g id="Search_Result_1_Grid"
+                                                    transform="translate(-1285.000000, -920.000000)" stroke="#5191FA">
+                                                    <g id="list-hotel" transform="translate(435.000000, 910.000000)">
+                                                        <g id="ico_grid_active"
+                                                            transform="translate(850.000000, 10.000000)">
+                                                            <g id="layout-module">
+                                                                <rect id="Rectangle-path" x="0.625" y="0.6225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="8.125" y="0.6225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="15.625" y="0.6225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="0.625" y="8.1225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="8.125" y="8.1225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="15.625" y="8.1225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="0.625" y="15.6225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="8.125" y="15.6225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                                <rect id="Rectangle-path" x="15.625" y="15.6225"
+                                                                    width="3.75" height="3.75" rx="1.5"></rect>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-all">
+                            <div class="row">
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/167411799-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">EnVision Hotel Boston</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Boston, MA, USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">3.7/5 Very Good</span>
+                                                    <span class="span-2">3 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€244,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/74264099-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Hotel Stanfor</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Boston, MA, USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">1.8/5 Poor</span>
+                                                    <span class="span-2">1 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€39,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/169474401-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Parian Holiday Villas</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Virginia, USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">4.5/5 Excellent</span>
+                                                    <span class="span-2">3 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€234,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/60337007-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Dylan Hotel</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> New York City, NY,
+                                                    USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">3.5/5 Very Good</span>
+                                                    <span class="span-2">3 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€273,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/63380673-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">The May Fair Hotel</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Virginia Beach, VA,
+                                                    USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">1.3/5 Poor</span>
+                                                    <span class="span-2">2 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€128,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/84514008-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Hotel Malte – Astotel</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> New York City, NY,
+                                                    USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">2.2/5 Average</span>
+                                                    <span class="span-2">1 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€130,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2017/06/36758163-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Hotel WBF Hommachi</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Ohio, USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">1.6/5 Poor</span>
+                                                    <span class="span-2">1 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€350,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2017/06/79746510-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Hyatt Centric Times Square</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Virginia, USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">4.7/5 Excellent</span>
+                                                    <span class="span-2">3 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€264,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/137313636-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Edwardian Kenilworth</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Virginia Beach, VA,
+                                                    USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">2.9/5 Average</span>
+                                                    <span class="span-2">2 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€128,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/93585266-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Hotel Ascot Opera</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Delaware, OH, USA
+                                                </p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">4.2/5 Excellent</span>
+                                                    <span class="span-2">1 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€130,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/574581_17042015570052514529-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">SLS Las Vegas Hotel</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> New Jersey, USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">1.4/5 Poor</span>
+                                                    <span class="span-2">1 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€350,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 d-inline-block">
+                                    <div class="product-main">
+                                        <div class="product-img">
+                                            <img src="https://mixmap.travelerwp.com/wp-content/uploads/2014/12/154186667-680x630.jpg"
+                                                alt="">
+                                            <div class="featured">Featured</div>
+                                            <i class="up-heart fas fa-heart"></i>
+                                            <ul class="rate-star d-flex">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-text">
+                                            <div class="up-pro-text">
+                                                <a href="#">Grand Desert Resort</a>
+                                                <p class="m-0"><i class="fas fa-map-marker-alt"></i> Delaware, USA</p>
+                                            </div>
+                                            <div class="down-pro-text">
+                                                <div class="rate d-flex align-items-center justify-content-between">
+                                                    <span class="span-1">3/5 Average</span>
+                                                    <span class="span-2">2 Reviews</span>
+                                                </div>
+                                                <div class="price-pro">
+                                                    <span class="price-1"><i class="fas fa-bolt"></i> from</span>
+                                                    <span class="price-2">€273,00</span>
+                                                    <span class="price-3">/night</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pages">
+                            <ul class="d-flex justify-content-center align-items-center">
+                                <li class="page-li active-page-li"><a class="page-a active-page" href="#">1</a></li>
+                                <li class="page-li"><a class="page-a" href="#">2</a></li>
+                                <li class="page-li"><a class="page-a" href="#"><i class="fas fa-chevron-right"></i></a></li>
+                            </ul>
+                            <p class="d-flex justify-content-center">1-12 of 20 Hotels</p>
                         </div>
                     </div>
                 </div>

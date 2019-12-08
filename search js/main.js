@@ -1,6 +1,16 @@
 "use strict"
 
+
+
+
 $(document).ready(function(){
+    
+    let myRange = document.getElementById("myRange");
+    let output = document.getElementById("value");
+    output.innerHTML = myRange.value;
+    myRange.oninput = function(){
+    output.innerHTML = this.value;
+    }
     $(".basket").click (function(){
         $(".inbasket").toggleClass("show-basket");
     });
@@ -28,5 +38,12 @@ $(document).ready(function(){
     })
     $(".active-a").click(function(){
         $(this).addClass("actived-click")
+    })
+    $(".filter-input").show();
+    $(".filter-head").click(function(){
+        $(this).next().slideToggle();
+    })
+    $(".detail-button").click(function(){
+        $(".detail-button-drop").toggleClass("actived-detail-button");
     })
 })
