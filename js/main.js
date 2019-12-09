@@ -63,4 +63,18 @@ $(document).ready(function(){
     $(".foot-click").click(function(){
         $(".foot-menu").toggleClass("d-block")
     });
+    const li = [...document.getElementsByClassName("acc-li")];
+    li.forEach(function(selected){
+      selected.addEventListener("click",function(e){
+        e.preventDefault();
+        const preActive = document.querySelector(".acc-li.actived-acc-li");
+        preActive.classList.remove("actived-acc-li");
+        selected.classList.add("actived-acc-li");
+
+        let id = selected.getAttribute("id");
+        let classId = "." + id
+        $(".acc-slider.acc-slider-active").removeClass("acc-slider-active").addClass("d-none");
+        $(classId).removeClass("d-none").addClass("acc-slider-active")
+      })
+    })
 })

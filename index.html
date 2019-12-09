@@ -302,57 +302,240 @@
                                             <p>Where would you like to go?</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <div class="acc-slider">
-                                            <ul class="d-flex">
-                                                <li>Hotel</li>
-                                                <li>Tour</li>
-                                                <li>Activity</li>
-                                                <li>Rental</li>
-                                                <li>Car Rental</li>
-                                                <li>Car Transfer</li>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                        <div class="acc-slider-title">
+                                            <ul class="acc-slider-list d-flex m-0">
+                                                <li class="acc-li actived-acc-li" id="hotel" >Hotel</li>
+                                                <li class="acc-li" id="tour">Tour</li>
+                                                <li class="acc-li" id="activity">Activity</li>
+                                                <li class="acc-li" id="rental">Rental</li>
+                                                <li class="acc-li" id="car-rental">Car Rental</li>
+                                                <li class="acc-li" id="car-transfer">Car Transfer</li>
                                             </ul>
-                                            <div class="acc-slider-title">
+                                            <div class="acc-slider acc-slider-active hotel">
                                                 <div class="row">
-                                                    <div class="col-lg-3">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                                                         <div class="acc-slider-main d-flex align-items-center">
-                                                            <i class="fas fa-map-marker-alt"></i>
+                                                            <i class="fas mr-3 fa-map-marker-alt"></i>
                                                             <div class="acc-slider-text">
-                                                                <p class="first-p m-0">Destination</p>
-                                                                <p class="secon-p m-0">Where are you going?</p>
+                                                                <p class="m-0 first-p">Destination</p>
+                                                                <p class="m-0 second-p">Where are you going?</p>
+                                                            </div>
+                                                        </div>
+                                                        .acc-slider-drop
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                            <i class="far mr-3 fa-calendar-alt"></i>
+                                                            <div class="acc-slider-text">
+                                                                <p class="m-0 first-p">Check In - Out</p>
+                                                                <p class="m-0 second-p">dd/mm/yy - dd/mm/yy</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="acc-slider-main d-flex align-items-center">
-                                                            <i class="far fa-calendar-alt"></i>
-                                                            <div class="acc-slider-text">
-                                                                <p class="first-p m-0">Check In - Out</p>
-                                                                <p class="secon-p m-0">dd/mm/yy - dd/mm/yy</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <div class="acc-slider-main d-flex justify-content-between align-items-center">
-                                                            <div class="up-acc d-flex align-items-center">
-                                                                <i class="fas fa-user-friends"></i>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between">
+                                                            <div class="up-acc-slider d-flex align-items-center">
+                                                                <i class="fas mr-3  fa-user-friends"></i>
                                                                 <div class="acc-slider-text">
-                                                                    <p class="first-p m-0">Check In - Out</p>
-                                                                    <p class="secon-p m-0">dd/mm/yy - dd/mm/yy</p>
+                                                                    <p class="first-p m-0">Guests</p>
+                                                                    <p class="second-p m-0">0 Adult - 0 Child</p>
                                                                 </div>
                                                             </div>
-                                                            <div class="down-acc">
+                                                            <div class="down-acc-slider">
                                                                 <i class="fas fa-chevron-down"></i>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-3">
-                                                        
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Advance</p>
+                                                                <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                            </div>
+                                                            <a href="#">SEARCH</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="acc-slider d-none tour">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                            <i class="fas mr-3 fa-map-marker-alt"></i>
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Destination</p>
+                                                                <p class="second-p m-0">Where are you going?</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                            <i class="far mr-3 fa-calendar-alt"></i>
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">From - To</p>
+                                                                <p class="second-p m-0">dd/mm/yy - dd/mm/yy</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Advance</p>
+                                                                <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                            </div>
+                                                            <a href="#">SEARCH</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="acc-slider d-none activity">
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                                            <div class="acc-slider-main d-flex align-items-center">
+                                                                <i class="fas mr-3 fa-map-marker-alt"></i>
+                                                                <div class="acc-slider-text">
+                                                                    <p class="first-p m-0">Destination</p>
+                                                                    <p class="second-p m-0">Where are you going?</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
+                                                            <div class="acc-slider-main d-flex align-items-center">
+                                                                <i class="far mr-3 fa-calendar-alt"></i>
+                                                                <div class="acc-slider-text">
+                                                                    <p class="first-p m-0">From - To</p>
+                                                                    <p class="second-p m-0">dd/mm/yy - dd/mm/yy</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-4">
+                                                            <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                                <div class="acc-slider-text">
+                                                                    <p class="first-p m-0">Advance</p>
+                                                                    <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                                </div>
+                                                                <a href="#">SEARCH</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="acc-slider d-none rental">
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                            <div class="acc-slider-main d-flex align-items-center">
+                                                                <i class="fas mr-3 fa-map-marker-alt"></i>
+                                                                <div class="acc-slider-text">
+                                                                    <p class="m-0 first-p">Destination</p>
+                                                                    <p class="m-0 second-p">Destination</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                            <div class="acc-slider-main d-flex align-items-center">
+                                                                <i class="far mr-3 fa-calendar-alt"></i>
+                                                                <div class="acc-slider-text">
+                                                                    <p class="m-0 first-p">Check In - Out</p>
+                                                                    <p class="m-0 second-p">dd/mm/yy - dd/mm/yy</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                            <div class="acc-slider-main d-flex align-items-center justify-content-between">
+                                                                <div class="up-acc-slider d-flex align-items-center">
+                                                                    <i class="fas mr-3  fa-user-friends"></i>
+                                                                    <div class="acc-slider-text">
+                                                                        <p class="first-p m-0">Guests</p>
+                                                                        <p class="second-p m-0">0 Adult - 0 Child</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="down-acc-slider">
+                                                                    <i class="fas fa-chevron-down"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                            <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                                <div class="acc-slider-text">
+                                                                    <p class="first-p m-0">Advance</p>
+                                                                    <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                                </div>
+                                                                <a href="#">SEARCH</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="acc-slider d-none car-rental">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                            <i class="fas mr-3 fa-map-marker-alt"></i>
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Location</p>
+                                                                <p class="second-p m-0">Azerbaijan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between">
+                                                            <div class="left-side-acc d-flex align-items-center">
+                                                                <i class="far mr-3 fa-calendar-alt"></i>
+                                                                <div class="acc-slider-text">
+                                                                    <p class="first-p m-0">Pick Up Time</p>
+                                                                    <p class="second-p m-0">dd/mm/yy, 10:44 AM</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="right-side-acc">
+                                                                <div class="acc-slider-text">
+                                                                    <p class="first-p m-0">Return Time</p>
+                                                                    <p class="second-p m-0">dd/mm/yy, 10:44 PM</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Advance</p>
+                                                                <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                            </div>
+                                                            <a href="#">SEARCH</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="acc-slider d-none car-transfer">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                                        <div class="acc-slider-main d-flex justify-content-around">
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Pick-up From</p>
+                                                                <p class="second-p m-0">---- Selcet ----</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                                        <div class="acc-slider-main d-flex justify-content-around">
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Drop-off To</p>
+                                                                <p class="second-p m-0">---- Selcet ----</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                                        <div class="acc-slider-main d-flex justify-content-between align-items-center acc-border-no">
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Advance</p>
+                                                                <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                            </div>
+                                                            <a href="#">SEARCH</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
