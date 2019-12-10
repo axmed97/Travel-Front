@@ -77,4 +77,63 @@ $(document).ready(function(){
         $(classId).removeClass("d-none").addClass("acc-slider-active")
       })
     })
+    $(".loc").click(function(){
+      $(".acc-slider-drop").toggleClass("acc-slider-drop-active");
+    })
+    $(".cal").click(function(){
+      $(".acc-slider-date").toggleClass("acc-slider-drop-active");
+    })
+    $("#datepicker").datepicker();
+    $(".user").click(function(){
+      $(".acc-slider-user").toggleClass("acc-slider-drop-active")
+    })
+
+    var box_1 = document.getElementsByClassName("box-1")[0];
+    var box_2 = document.getElementsByClassName("box-2")[0];
+    var box_3 = document.getElementsByClassName("box-3")[0];
+    var nextCalc = document.getElementById("next-calc");
+    var prevCalc = document.getElementById("prev-calc");
+    var leftCalc = document.getElementById("left-calc");
+    var rightCalc = document.getElementById("right-calc");
+    var downCalc = document.getElementById("down-calc");
+    var upCalc = document.getElementById("up-calc");
+
+    nextCalc.addEventListener("click",function(){
+      box_1.innerHTML++
+    })
+    prevCalc.addEventListener("click",function(){
+      box_1.innerHTML--
+    })
+
+    rightCalc.addEventListener("click",function(){
+      box_2.innerHTML++ 
+    })
+    leftCalc.addEventListener("click",function(){
+      box_2.innerHTML--
+    })
+    
+    upCalc.addEventListener("click",function(){
+      box_3.innerHTML++
+    })
+    downCalc.addEventListener("click",function(){
+      box_3.innerHTML--
+    })
+    $(window).scroll(function(){
+      if($(this).scrollTop()>250){
+        $(".return-to-back").fadeIn();
+      }
+      else{
+        $(".return-to-back").fadeOut();
+      }
+    });
+    $(".return-to-back").click(function(){
+      $("html,body").animate({
+        scrollTop:0
+      },1000)
+    });
 })
+
+window.onload = function(){
+  let PreLoader = document.getElementById("preloader");
+  PreLoader.style.display = "none";
+};

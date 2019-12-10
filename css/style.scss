@@ -13,13 +13,218 @@ a:hover{
 li{
     list-style: none;
 }
-
 /* Header Start */
-
+#preloader{
+    background-color: #fff;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .cssload-thecube {
+        width: 73px;
+        height: 73px;
+        margin: 0 auto;
+        margin-top: 49px;
+        position: relative;
+        transform: rotateZ(45deg);
+            -o-transform: rotateZ(45deg);
+            -ms-transform: rotateZ(45deg);
+            -webkit-transform: rotateZ(45deg);
+            -moz-transform: rotateZ(45deg);
+    }
+    .cssload-thecube .cssload-cube {
+        position: relative;
+        transform: rotateZ(45deg);
+            -o-transform: rotateZ(45deg);
+            -ms-transform: rotateZ(45deg);
+            -webkit-transform: rotateZ(45deg);
+            -moz-transform: rotateZ(45deg);
+    }
+    .cssload-thecube .cssload-cube {
+        float: left;
+        width: 50%;
+        height: 50%;
+        position: relative;
+        transform: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+    }
+    .cssload-thecube .cssload-cube:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(43,160,199);
+        animation: cssload-fold-thecube 2.76s infinite linear both;
+            -o-animation: cssload-fold-thecube 2.76s infinite linear both;
+            -ms-animation: cssload-fold-thecube 2.76s infinite linear both;
+            -webkit-animation: cssload-fold-thecube 2.76s infinite linear both;
+            -moz-animation: cssload-fold-thecube 2.76s infinite linear both;
+        transform-origin: 100% 100%;
+            -o-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            -webkit-transform-origin: 100% 100%;
+            -moz-transform-origin: 100% 100%;
+    }
+    .cssload-thecube .cssload-c2 {
+        transform: scale(1.1) rotateZ(90deg);
+            -o-transform: scale(1.1) rotateZ(90deg);
+            -ms-transform: scale(1.1) rotateZ(90deg);
+            -webkit-transform: scale(1.1) rotateZ(90deg);
+            -moz-transform: scale(1.1) rotateZ(90deg);
+    }
+    .cssload-thecube .cssload-c3 {
+        transform: scale(1.1) rotateZ(180deg);
+            -o-transform: scale(1.1) rotateZ(180deg);
+            -ms-transform: scale(1.1) rotateZ(180deg);
+            -webkit-transform: scale(1.1) rotateZ(180deg);
+            -moz-transform: scale(1.1) rotateZ(180deg);
+    }
+    .cssload-thecube .cssload-c4 {
+        transform: scale(1.1) rotateZ(270deg);
+            -o-transform: scale(1.1) rotateZ(270deg);
+            -ms-transform: scale(1.1) rotateZ(270deg);
+            -webkit-transform: scale(1.1) rotateZ(270deg);
+            -moz-transform: scale(1.1) rotateZ(270deg);
+    }
+    .cssload-thecube .cssload-c2:before {
+        animation-delay: 0.35s;
+            -o-animation-delay: 0.35s;
+            -ms-animation-delay: 0.35s;
+            -webkit-animation-delay: 0.35s;
+            -moz-animation-delay: 0.35s;
+    }
+    .cssload-thecube .cssload-c3:before {
+        animation-delay: 0.69s;
+            -o-animation-delay: 0.69s;
+            -ms-animation-delay: 0.69s;
+            -webkit-animation-delay: 0.69s;
+            -moz-animation-delay: 0.69s;
+    }
+    .cssload-thecube .cssload-c4:before {
+        animation-delay: 1.04s;
+            -o-animation-delay: 1.04s;
+            -ms-animation-delay: 1.04s;
+            -webkit-animation-delay: 1.04s;
+            -moz-animation-delay: 1.04s;
+    }
+    
+    
+    
+    @keyframes cssload-fold-thecube {
+        0%, 10% {
+            transform: perspective(136px) rotateX(-180deg);
+            opacity: 0;
+        }
+        25%,
+                    75% {
+            transform: perspective(136px) rotateX(0deg);
+            opacity: 1;
+        }
+        90%,
+                    100% {
+            transform: perspective(136px) rotateY(180deg);
+            opacity: 0;
+        }
+    }
+    
+    @-o-keyframes cssload-fold-thecube {
+        0%, 10% {
+            -o-transform: perspective(136px) rotateX(-180deg);
+            opacity: 0;
+        }
+        25%,
+                    75% {
+            -o-transform: perspective(136px) rotateX(0deg);
+            opacity: 1;
+        }
+        90%,
+                    100% {
+            -o-transform: perspective(136px) rotateY(180deg);
+            opacity: 0;
+        }
+    }
+    
+    @-ms-keyframes cssload-fold-thecube {
+        0%, 10% {
+            -ms-transform: perspective(136px) rotateX(-180deg);
+            opacity: 0;
+        }
+        25%,
+                    75% {
+            -ms-transform: perspective(136px) rotateX(0deg);
+            opacity: 1;
+        }
+        90%,
+                    100% {
+            -ms-transform: perspective(136px) rotateY(180deg);
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes cssload-fold-thecube {
+        0%, 10% {
+            -webkit-transform: perspective(136px) rotateX(-180deg);
+            opacity: 0;
+        }
+        25%,
+                    75% {
+            -webkit-transform: perspective(136px) rotateX(0deg);
+            opacity: 1;
+        }
+        90%,
+                    100% {
+            -webkit-transform: perspective(136px) rotateY(180deg);
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes cssload-fold-thecube {
+        0%, 10% {
+            -moz-transform: perspective(136px) rotateX(-180deg);
+            opacity: 0;
+        }
+        25%,
+                    75% {
+            -moz-transform: perspective(136px) rotateX(0deg);
+            opacity: 1;
+        }
+        90%,
+                    100% {
+            -moz-transform: perspective(136px) rotateY(180deg);
+            opacity: 0;
+        }
+    }
+}
 /* Top Header Start */
 .top-header{
     background-color: #1A2B48;
     padding: 15px 50px;
+    .return-to-back{
+        z-index: 50;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #1A2B48;
+        color: white;
+        font-size: 25px;
+        opacity: 0.8;
+        padding: 10px 20px;
+        transition: .5s;
+        display: none;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover{
+            opacity: 1;
+        }
+    }
     .top{
         display: flex;
         height: 100%;
@@ -389,6 +594,94 @@ li{
         .actived-acc-li{
             background-color: #5191FA !important;
         }
+    }
+    .acc-slider-drop-active{
+        display: block !important;
+    }
+    .acc-slider-drop{
+        position: absolute;
+        top: 100%;
+        right: 11px;
+        width: 91%;
+        background-color: #fff;
+        max-height: 332px;
+        padding: 15px 30px;
+        overflow-y: scroll;
+        z-index: 2;
+        box-shadow: 0 1px 2px rgba(0,0,0,.175);
+        border-radius: 0 0 5px 5px;
+        border: 1px solid rgba(0,0,0,.15);
+        ul{
+            li{
+                cursor: pointer;
+            }
+            li:hover{
+                background-color: #F5F4F7;
+            }
+            .li-parent{
+                font-size: 16px;
+                color: #1A2B48;
+                padding: 6px 20px;
+            }
+            .li-child{
+                color: #1A2B48;
+                font-size: 14px;
+                padding: 7px 20px;
+                i{
+                    font-size: 14px;
+                    color: #808080;
+                }
+            }
+            .li-small-child{
+                padding: 7px 20px 7px 40px;
+                font-size: 14px;
+                color: #1A2B48;
+            }
+        }
+    }
+    .cal{
+        position: relative;
+    }
+    .user{
+        position: relative;
+    }
+    .acc-slider-user{
+        position: absolute;
+        top: 100%;
+        right: 15px;
+        padding: 15px 30px;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        background-color: #fff;
+        width: 100%;
+        ul{
+            li{
+                font-size: 14px;
+                color: #5E6D77;
+                margin-bottom: 20px;
+                i{
+                    font-size: 18px;
+                }
+                #box{
+                    margin: 0 10px;
+                    color: #5191FA;
+                }
+            }
+        }
+    }
+    .acc-slider-date{
+        z-index: 10;
+        position: absolute;
+        top: 100%;
+        right: auto;   
+        width: 100% !important;
+        #datepicker{
+            width: 100% !important;
+        }
+    }
+    .loc{
+        position: relative;
     }
     .acc-slider{
         background-color: #fff;

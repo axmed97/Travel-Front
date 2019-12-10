@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Traveler - Home</title>
+    <link rel="icon" type="image/png" href="https://mixmap.travelerwp.com/wp-content/uploads/2018/11/favicon-1.png">
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -15,6 +16,7 @@
         rel="stylesheet">
     <!-- CSS Links -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/aos.css">
@@ -22,6 +24,14 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+        </div>
+    </div>
     <!-- Header Start -->
     <header>
         <!-- Top Header Start -->
@@ -61,6 +71,11 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="return-to-back">
+                            <i class="fas fa-chevron-up"></i>
                         </div>
                     </div>
                 </div>
@@ -219,7 +234,8 @@
                                         </div>
                                     </li>
                                     <li class="bottom-li">
-                                        <a class="bottom-link" href="contact.html">CONTACT <i class="fas fa-chevron-down"></i></a>
+                                        <a class="bottom-link" href="contact.html">CONTACT <i
+                                                class="fas fa-chevron-down"></i></a>
                                         <div class="bottom-drop-menu d-flex">
                                             <ul>
                                                 <li class="hd-li">Listing</li>
@@ -249,7 +265,8 @@
                                         </div>
                                     </li>
                                     <li class="bottom-li">
-                                        <a class="bottom-link" href="search.html">SEARCH <i class="fas fa-chevron-down"></i></a>
+                                        <a class="bottom-link" href="search.html">SEARCH <i
+                                                class="fas fa-chevron-down"></i></a>
                                         <div class="bottom-drop-menu-little">
                                             <ul>
                                                 <li class="bd-li"><a class="hd-a" href="#">Car Top Search</a></li>
@@ -305,7 +322,7 @@
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                         <div class="acc-slider-title">
                                             <ul class="acc-slider-list d-flex m-0">
-                                                <li class="acc-li actived-acc-li" id="hotel" >Hotel</li>
+                                                <li class="acc-li actived-acc-li" id="hotel">Hotel</li>
                                                 <li class="acc-li" id="tour">Tour</li>
                                                 <li class="acc-li" id="activity">Activity</li>
                                                 <li class="acc-li" id="rental">Rental</li>
@@ -315,26 +332,57 @@
                                             <div class="acc-slider acc-slider-active hotel">
                                                 <div class="row">
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                        <div class="acc-slider-main loc d-flex align-items-center">
                                                             <i class="fas mr-3 fa-map-marker-alt"></i>
                                                             <div class="acc-slider-text">
                                                                 <p class="m-0 first-p">Destination</p>
                                                                 <p class="m-0 second-p">Where are you going?</p>
                                                             </div>
                                                         </div>
-                                                        .acc-slider-drop
+                                                        <div class="acc-slider-drop d-none">
+                                                            <ul>
+                                                                <li class="li-parent">United States</li>
+                                                                <li class="li-child"><i
+                                                                        class="fas fa-map-marker-alt"></i> California
+                                                                </li>
+                                                                <li class="li-child"><i
+                                                                        class="fas fa-map-marker-alt"></i> Los Angeles
+                                                                </li>
+                                                                <li class="li-child"><i
+                                                                        class="fas fa-map-marker-alt"></i> Nevada</li>
+                                                                <li class="li-child"><i
+                                                                        class="fas fa-map-marker-alt"></i> New Jersey
+                                                                </li>
+                                                                <li class="li-small-child">Deleware</li>
+                                                                <li class="li-small-child">Philadelphia</li>
+                                                                <li class="li-child"><i
+                                                                        class="fas fa-map-marker-alt"></i> New York City
+                                                                </li>
+                                                                <li class="li-child"><i
+                                                                        class="fas fa-map-marker-alt"></i> San Francisco
+                                                                </li>
+                                                                <li class="li-small-child">Wilmington</li>
+                                                                <li class="li-child"><i
+                                                                        class="fas fa-map-marker-alt"></i> Virginia</li>
+                                                                <li class="li-small-child">Virginia Beach</li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                        <div class="acc-slider-main cal d-flex align-items-center">
                                                             <i class="far mr-3 fa-calendar-alt"></i>
                                                             <div class="acc-slider-text">
                                                                 <p class="m-0 first-p">Check In - Out</p>
                                                                 <p class="m-0 second-p">dd/mm/yy - dd/mm/yy</p>
                                                             </div>
                                                         </div>
+                                                        <div class="acc-slider-date d-none">
+                                                            <div id="datepicker"></div>
+                                                        </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between">
+                                                        <div
+                                                            class="acc-slider-main user d-flex align-items-center justify-content-between">
                                                             <div class="up-acc-slider d-flex align-items-center">
                                                                 <i class="fas mr-3  fa-user-friends"></i>
                                                                 <div class="acc-slider-text">
@@ -346,12 +394,51 @@
                                                                 <i class="fas fa-chevron-down"></i>
                                                             </div>
                                                         </div>
+                                                        <div class="acc-slider-user d-none">
+                                                            <ul>
+                                                                <li
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <label>Rooms</label>
+                                                                    <div class="calculator d-flex align-items-center">
+                                                                        <span id="prev-calc"><i
+                                                                                class="fas fa-minus"></i></span>
+                                                                        <span class="box-1" id="box">0</span>
+                                                                        <span id="next-calc"><i
+                                                                                class="fas fa-plus"></i></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <label>Adults</label>
+                                                                    <div class="calculator d-flex align-items-center">
+                                                                        <span id="left-calc"><i
+                                                                                class="fas fa-minus"></i></span>
+                                                                        <span class="box-2" id="box">0</span>
+                                                                        <span id="right-calc"><i
+                                                                                class="fas fa-plus"></i></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <label>Children</label>
+                                                                    <div class="calculator d-flex align-items-center">
+                                                                        <span id="down-calc"><i
+                                                                                class="fas fa-minus"></i></span>
+                                                                        <span class="box-3" id="box">0</span>
+                                                                        <span id="up-calc"><i
+                                                                                class="fas fa-plus"></i></span>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                        <div
+                                                            class="acc-slider-main advance d-flex align-items-center justify-content-between acc-border-no">
                                                             <div class="acc-slider-text">
                                                                 <p class="first-p m-0">Advance</p>
-                                                                <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                                <p class="second-p m-0">More <i
+                                                                        class="fas fa-sort-down"></i></p>
                                                             </div>
                                                             <a href="#">SEARCH</a>
                                                         </div>
@@ -379,10 +466,12 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                        <div
+                                                            class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
                                                             <div class="acc-slider-text">
                                                                 <p class="first-p m-0">Advance</p>
-                                                                <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                                <p class="second-p m-0">More <i
+                                                                        class="fas fa-sort-down"></i></p>
                                                             </div>
                                                             <a href="#">SEARCH</a>
                                                         </div>
@@ -390,80 +479,85 @@
                                                 </div>
                                             </div>
                                             <div class="acc-slider d-none activity">
-                                                    <div class="row">
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                                                            <div class="acc-slider-main d-flex align-items-center">
-                                                                <i class="fas mr-3 fa-map-marker-alt"></i>
-                                                                <div class="acc-slider-text">
-                                                                    <p class="first-p m-0">Destination</p>
-                                                                    <p class="second-p m-0">Where are you going?</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
-                                                            <div class="acc-slider-main d-flex align-items-center">
-                                                                <i class="far mr-3 fa-calendar-alt"></i>
-                                                                <div class="acc-slider-text">
-                                                                    <p class="first-p m-0">From - To</p>
-                                                                    <p class="second-p m-0">dd/mm/yy - dd/mm/yy</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-4">
-                                                            <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
-                                                                <div class="acc-slider-text">
-                                                                    <p class="first-p m-0">Advance</p>
-                                                                    <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
-                                                                </div>
-                                                                <a href="#">SEARCH</a>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                            <i class="fas mr-3 fa-map-marker-alt"></i>
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Destination</p>
+                                                                <p class="second-p m-0">Where are you going?</p>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-4">
+                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                            <i class="far mr-3 fa-calendar-alt"></i>
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">From - To</p>
+                                                                <p class="second-p m-0">dd/mm/yy - dd/mm/yy</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-4">
+                                                        <div
+                                                            class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Advance</p>
+                                                                <p class="second-p m-0">More <i
+                                                                        class="fas fa-sort-down"></i></p>
+                                                            </div>
+                                                            <a href="#">SEARCH</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="acc-slider d-none rental">
-                                                    <div class="row">
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                            <div class="acc-slider-main d-flex align-items-center">
-                                                                <i class="fas mr-3 fa-map-marker-alt"></i>
-                                                                <div class="acc-slider-text">
-                                                                    <p class="m-0 first-p">Destination</p>
-                                                                    <p class="m-0 second-p">Destination</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                            <div class="acc-slider-main d-flex align-items-center">
-                                                                <i class="far mr-3 fa-calendar-alt"></i>
-                                                                <div class="acc-slider-text">
-                                                                    <p class="m-0 first-p">Check In - Out</p>
-                                                                    <p class="m-0 second-p">dd/mm/yy - dd/mm/yy</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                            <div class="acc-slider-main d-flex align-items-center justify-content-between">
-                                                                <div class="up-acc-slider d-flex align-items-center">
-                                                                    <i class="fas mr-3  fa-user-friends"></i>
-                                                                    <div class="acc-slider-text">
-                                                                        <p class="first-p m-0">Guests</p>
-                                                                        <p class="second-p m-0">0 Adult - 0 Child</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="down-acc-slider">
-                                                                    <i class="fas fa-chevron-down"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                            <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
-                                                                <div class="acc-slider-text">
-                                                                    <p class="first-p m-0">Advance</p>
-                                                                    <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
-                                                                </div>
-                                                                <a href="#">SEARCH</a>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                            <i class="fas mr-3 fa-map-marker-alt"></i>
+                                                            <div class="acc-slider-text">
+                                                                <p class="m-0 first-p">Destination</p>
+                                                                <p class="m-0 second-p">Destination</p>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div class="acc-slider-main d-flex align-items-center">
+                                                            <i class="far mr-3 fa-calendar-alt"></i>
+                                                            <div class="acc-slider-text">
+                                                                <p class="m-0 first-p">Check In - Out</p>
+                                                                <p class="m-0 second-p">dd/mm/yy - dd/mm/yy</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div
+                                                            class="acc-slider-main d-flex align-items-center justify-content-between">
+                                                            <div class="up-acc-slider d-flex align-items-center">
+                                                                <i class="fas mr-3  fa-user-friends"></i>
+                                                                <div class="acc-slider-text">
+                                                                    <p class="first-p m-0">Guests</p>
+                                                                    <p class="second-p m-0">0 Adult - 0 Child</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="down-acc-slider">
+                                                                <i class="fas fa-chevron-down"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                                                        <div
+                                                            class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                            <div class="acc-slider-text">
+                                                                <p class="first-p m-0">Advance</p>
+                                                                <p class="second-p m-0">More <i
+                                                                        class="fas fa-sort-down"></i></p>
+                                                            </div>
+                                                            <a href="#">SEARCH</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="acc-slider d-none car-rental">
                                                 <div class="row">
@@ -477,7 +571,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
-                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between">
+                                                        <div
+                                                            class="acc-slider-main d-flex align-items-center justify-content-between">
                                                             <div class="left-side-acc d-flex align-items-center">
                                                                 <i class="far mr-3 fa-calendar-alt"></i>
                                                                 <div class="acc-slider-text">
@@ -494,10 +589,12 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
-                                                        <div class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
+                                                        <div
+                                                            class="acc-slider-main d-flex align-items-center justify-content-between acc-border-no">
                                                             <div class="acc-slider-text">
                                                                 <p class="first-p m-0">Advance</p>
-                                                                <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                                <p class="second-p m-0">More <i
+                                                                        class="fas fa-sort-down"></i></p>
                                                             </div>
                                                             <a href="#">SEARCH</a>
                                                         </div>
@@ -523,10 +620,12 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                                                        <div class="acc-slider-main d-flex justify-content-between align-items-center acc-border-no">
+                                                        <div
+                                                            class="acc-slider-main d-flex justify-content-between align-items-center acc-border-no">
                                                             <div class="acc-slider-text">
                                                                 <p class="first-p m-0">Advance</p>
-                                                                <p class="second-p m-0">More <i class="fas fa-sort-down"></i></p>
+                                                                <p class="second-p m-0">More <i
+                                                                        class="fas fa-sort-down"></i></p>
                                                             </div>
                                                             <a href="#">SEARCH</a>
                                                         </div>
@@ -535,7 +634,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -1115,7 +1214,8 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="end-img">
-                            <img src="https://mixmap.travelerwp.com/wp-content/themes/traveler2.5/v2/images/svg/ico_paymethod.svg" alt="">
+                            <img src="https://mixmap.travelerwp.com/wp-content/themes/traveler2.5/v2/images/svg/ico_paymethod.svg"
+                                alt="">
                         </div>
                     </div>
                 </div>
@@ -1125,6 +1225,7 @@
     <!-- The End End -->
     <!-- JavaScript Links -->
     <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
